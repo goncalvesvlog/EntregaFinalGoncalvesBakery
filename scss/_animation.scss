@@ -1,0 +1,93 @@
+@import "variable";
+
+@mixin imgsize($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.img-tall, .img-tall-other {
+    @include imgsize(18rem, 18rem);
+}
+
+#img-nos {
+    height: 370px;
+    border-radius: 50px;
+}
+
+/* Animaciones */
+.img-logo {
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.img-tall {
+    transition: transform .4s;
+}
+
+.img-tall:hover {
+    transform: scale(1.2);
+}
+
+.container-productos {
+    background-color: $color-card-fondo;
+    animation-name: example;
+    animation-duration: 10s;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes example {
+    from {
+        background-color: $color-card-fondo;
+    }
+
+    to {
+        background-color: $color-play-fond;
+    }
+}

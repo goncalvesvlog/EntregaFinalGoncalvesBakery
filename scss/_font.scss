@@ -1,0 +1,30 @@
+@import "variable";
+
+article, main p{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.text-card-home{
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.tittle-principal {
+    font-size: 5rem !important;
+    padding-top: 10rem !important;
+    padding-bottom: 3rem !important;
+    -webkit-text-stroke: 3px $text-color-p;
+    color: $color-text-princ;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+.second-title {
+    padding-top: 8rem;
+    text-align: center;
+}
